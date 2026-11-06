@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Deployer;
 
 // Include base recipes
+const CACHE_WARMUP = 'cache:warmup --';
 require 'recipe/common.php';
 require 'contrib/cachetool.php';
 require 'contrib/rsync.php';
@@ -110,42 +111,42 @@ task('deploy:update_code', function () {
 // TYPO3 tasks
 desc('Flush page cache');
 task('typo3:cache_flush', function () {
-    run('{{bin/typo3}} cache:flush --group pages');
+    run('php -d memory_limit=512M {{bin/typo3}} cache:flush --group pages');
 });
 
 desc('Warm up caches');
 task('typo3:cache_warmup', function () {
-    run('{{bin/typo3}} cache:warmup --group system');
+    run('php -d memory_limit=512M {{bin/typo3}} ' . CACHE_WARMUP . 'group system');
 });
 
 desc('Set up all installed extensions');
 task('typo3:extension_setup', function () {
-    run('{{bin/typo3}} extension:setup');
+    run('php -d memory_limit=512M {{bin/typo3}} extension:setup');
 });
 
 desc('Fix folder structure');
 task('typo3:fix_folder_structure', function () {
-    run('{{bin/typo3}} install:fixfolderstructure');
+    run('php -d memory_limit=512M {{bin/typo3}} install:fixfolderstructure');
 });
 
 desc('Update language files');
 task('typo3:language_update', function () {
-    run('{{bin/typo3}} language:update');
+    run('php -d memory_limit=512M {{bin/typo3}} language:update');
 });
 
 desc('Update database schema');
 task('typo3:update_database', function () {
-    run("{{bin/typo3}} database:updateschema '*.add,*.change'");
+    run("php -d memory_limit=512M {{bin/typo3}} database:updateschema '*.add,*.change'");
 });
 
 desc('Execute upgrade wizards');
 task('typo3:upgrade_all', function () {
-    run('{{bin/typo3}} upgrade:run');
+    run('php -d memory_limit=512M {{bin/typo3}} upgrade:run');
 });
 
 desc('Update reference index');
 task('typo3:update_reference_index', function () {
-    run("{{bin/typo3}} referenceindex:update");
+    run("php -d memory_limit=512M {{bin/typo3}} referenceindex:update");
 });
 
 task('correct_permissions', function () {

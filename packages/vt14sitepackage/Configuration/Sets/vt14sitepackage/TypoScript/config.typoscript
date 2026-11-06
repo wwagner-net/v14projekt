@@ -1,0 +1,16 @@
+config {
+  headerComment (
+Demo-Website für das TYPO3 14 Videotraining von Wolfgang Wagner
+Infos: https://wwagner.net/14
+Wolfgang Wagner - TYPO3 CMS Integrator, TYPO3 Cosultant Parter
+Mail: videotraining@wwagner.net
+  )
+
+  admPanel = 0
+
+  spamProtectEmailAddresses = -4
+  #spamProtectEmailAddresses_atSubst = -at-
+  #spamProtectEmailAddresses_lastDotSubst = (.)
+
+  cache_period = 604800
+}

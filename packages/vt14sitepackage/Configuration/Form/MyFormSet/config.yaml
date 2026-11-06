@@ -1,0 +1,26 @@
+# Unique identifier, vendor/name convention (like composer package names)
+name: wwagner/my-form-set
+
+# Human-readable label for diagnostic output
+label: 'My Custom Form Set'
+
+# Load order: lower values are loaded first and act as base configuration.
+# Extension sets should use a value > 10 to be merged on top of the
+# TYPO3 core base set (typo3/form-base, priority: 10).
+# Default: 100
+priority: 100
+
+persistenceManager:
+  allowSaveToExtensionPaths: true
+  allowDeleteFromExtensionPaths: false
+  allowedExtensionPaths:
+    10: EXT:vt14sitepackage/Resources/Private/FormDefinitions/
+
+prototypes:
+  standard:
+    finishersDefinition:
+      EmailToReceiver:
+        options:
+          templateName: 'Receiver'
+          templateRootPaths:
+            10: 'EXT:vt14sitepackage/Resources/Private/Extensions/form/Templates/Finishers/Email/'

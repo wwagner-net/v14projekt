@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+    <file id="testimonials">
+        <unit id="title">
+            <segment>
+                <source>Testimonials</source>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment>
+                <source>Testimonial slider with name, position, photo, rating and a quote.</source>
+            </segment>
+        </unit>
+        <unit id="header.label">
+            <segment>
+                <source>Element name (not visible in frontend)</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.label">
+            <segment>
+                <source>Testimonials</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.header.label">
+            <segment>
+                <source>Name of the person</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.subheader.label">
+            <segment>
+                <source>Position or company of the person</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.image.label">
+            <segment>
+                <source>Image of the person</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.label">
+            <segment>
+                <source>Rating (0-5 stars)</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.0.label">
+            <segment>
+                <source>0 stars</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.1.label">
+            <segment>
+                <source>1 star</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.2.label">
+            <segment>
+                <source>2 stars</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.3.label">
+            <segment>
+                <source>3 stars</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.4.label">
+            <segment>
+                <source>4 stars</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.5.label">
+            <segment>
+                <source>5 stars</source>
+            </segment>
+        </unit>
+        <unit id="testimonials.bodytext.label">
+            <segment>
+                <source>Quote</source>
+            </segment>
+        </unit>
+    </file>
+</xliff>

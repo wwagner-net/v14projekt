@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16">
+  <path fill="#FFF" d="M1 1h14v14H1z"/>
+  <path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/>
+  <!-- Section heading -->
+  <rect x="4" y="3" width="8" height="1" fill="#666"/>
+  <!-- Card 1: x=3..6 -->
+  <rect x="3" y="4.5" width="3" height="8.5" fill="#F0F4FF"/>
+  <rect x="3.5" y="5.5" width="2" height="2" fill="#59F"/>
+  <rect x="3.5" y="8.5" width="2" height=".75" fill="#555"/>
+  <rect x="3.5" y="9.75" width="2" height=".5" fill="#B9B9B9"/>
+  <rect x="3.5" y="10.5" width="1.5" height=".5" fill="#B9B9B9"/>
+  <rect x="3.5" y="12" width="2" height=".5" fill="#59F"/>
+  <!-- Card 2: x=6.5..9.5 -->
+  <rect x="6.5" y="4.5" width="3" height="8.5" fill="#F0F4FF"/>
+  <rect x="7" y="5.5" width="2" height="2" fill="#59F"/>
+  <rect x="7" y="8.5" width="2" height=".75" fill="#555"/>
+  <rect x="7" y="9.75" width="2" height=".5" fill="#B9B9B9"/>
+  <rect x="7" y="10.5" width="1.5" height=".5" fill="#B9B9B9"/>
+  <rect x="7" y="12" width="2" height=".5" fill="#59F"/>
+  <!-- Card 3: x=10..13 -->
+  <rect x="10" y="4.5" width="3" height="8.5" fill="#F0F4FF"/>
+  <rect x="10.5" y="5.5" width="2" height="2" fill="#59F"/>
+  <rect x="10.5" y="8.5" width="2" height=".75" fill="#555"/>
+  <rect x="10.5" y="9.75" width="2" height=".5" fill="#B9B9B9"/>
+  <rect x="10.5" y="10.5" width="1.5" height=".5" fill="#B9B9B9"/>
+  <rect x="10.5" y="12" width="2" height=".5" fill="#59F"/>
+</svg>

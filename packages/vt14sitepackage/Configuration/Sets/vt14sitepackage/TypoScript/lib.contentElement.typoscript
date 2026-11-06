@@ -1,0 +1,8 @@
+lib.contentElement {
+  layoutRootPaths {
+    100 = EXT:vt14sitepackage/Resources/Private/Extensions/fluid_styled_content/Layouts/
+  }
+  partialRootPaths {
+    100 = EXT:vt14sitepackage/Resources/Private/Extensions/fluid_styled_content/Partials/
+  }
+}

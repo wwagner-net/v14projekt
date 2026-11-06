@@ -1,0 +1,26 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Preview"/>
+
+<f:section name="Header">
+    <cb:link.editRecord uid="{data.uid}" table="{data.mainType}">{data.header}</cb:link.editRecord>
+</f:section>
+
+<f:section name="Content">
+    <cb:link.editRecord uid="{data.uid}" table="{data.mainType}">
+        <f:if condition="{data.faq_richsnippet}">
+            <p><em>FAQ Rich Snippet (Schema.org) aktiv</em></p>
+        </f:if>
+        <f:for each="{data.faq_items}" as="item">
+            <p>
+                <strong>{item.question}</strong><br>
+                {item.answer -> f:format.crop(maxCharacters: 100) -> f:transform.html()}
+            </p>
+        </f:for>
+    </cb:link.editRecord>
+</f:section>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-04-25T11:03:11+00:00" product-name="wwagner/hero">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Hero</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Hero element with background image, text and button</source>
+      </trans-unit>
+      <trans-unit id="bodytext.label">
+        <source>Text above the button</source>
+      </trans-unit>
+      <trans-unit id="button_text.label">
+        <source>Button text</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

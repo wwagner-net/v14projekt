@@ -1,0 +1,9 @@
+vt14sitepackage.metaMenuUid: 22
+vt14sitepackage.buttonText: 'Zum TYPO3 Komplettkurs'
+vt14sitepackage.buttonLink: 'https://wwagner.net/typo3-komplettkurs?mtm_source=demo-site&mtm_medium=website&mtm_campaign=demo-komplettkurs'
+vt14sitepackage.socialicons:
+  - 'https://www.linkedin.com/in/wolfgang-wagner-fn/,linkedin'
+  - 'https://www.instagram.com/wolfgangwagner_fn/,instagram'
+felogin.dateFormat: 'd.m.Y H:i'
+vt14sitepackage.buttonColor: '#ff8700'
+vt14sitepackage.copyrighttext: 'Wolfgang Wagner. Diese Website wurde im TYPO3 Komplettkurs von Wolfgang Wagner gebaut.'

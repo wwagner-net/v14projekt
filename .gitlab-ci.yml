@@ -1,0 +1,54 @@
+stages:
+  - deploy
+
+# Gemeinsame Grundlage für Deployment und Rollback (versteckter Job, läuft nicht selbst)
+.deployer:
+  stage: deploy
+  image: php:8.5-cli
+  resource_group: production
+  before_script:
+    # PHP-Erweiterungen und Systempakete (mbstring ist im offiziellen Image bereits enthalten)
+    - apt-get update -qq
+    - apt-get install -y -qq git unzip rsync openssh-client libicu-dev > /dev/null
+    - docker-php-ext-install -j"$(nproc)" intl > /dev/null
+
+    # Composer installieren
+    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+    # Deployer installieren
+    - composer global require deployer/deployer:^8
+    - export PATH="$(composer global config bin-dir --absolute --quiet):$PATH"
+
+    # SSH-Agent starten und Schlüssel hinzufügen
+    - eval "$(ssh-agent -s)"
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+
+    # SSH konfigurieren
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+deploy:
+  extends: .deployer
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE == "push"'
+  script:
+    # Abhängigkeiten installieren
+    - composer install --no-dev --no-ansi --no-interaction --no-scripts --prefer-dist --ignore-platform-reqs
+
+    # Deployment auf Produktion
+    - dep deploy production -vvv
+
+# Manuell starten: Build > Pipelines > Pipeline von main > Play-Button bei "rollback".
+# Stellt den Symlink "current" auf den vorherigen Release zurück.
+# Achtung: main enthält danach weiter den fehlerhaften Stand. Den Fehler
+# zusätzlich per "git revert" beheben, sonst deployt der nächste Push ihn erneut.
+rollback:
+  extends: .deployer
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE == "push"'
+      when: manual
+      # Ohne diese Zeile bleibt jede Pipeline auf "blocked", bis jemand den Rollback startet
+      allow_failure: true
+  script:
+    - dep rollback production -vvv

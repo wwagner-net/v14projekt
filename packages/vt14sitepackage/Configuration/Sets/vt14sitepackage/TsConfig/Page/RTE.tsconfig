@@ -1,0 +1,9 @@
+RTE {
+  default.preset = mypreset
+  default {
+    # buttons.link.options.removeItems = folder
+  }
+
+  # config.tt_content.bodytext.types.textmedia.preset = full
+
+}

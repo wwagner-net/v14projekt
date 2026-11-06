@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+    <file id="faq">
+        <unit id="title">
+            <segment>
+                <source>FAQ</source>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment>
+                <source>FAQ accordion with configurable question-answer pairs. Optionally outputs Schema.org FAQ Rich Snippet markup.</source>
+            </segment>
+        </unit>
+        <unit id="header.label">
+            <segment>
+                <source>FAQ heading (optional)</source>
+            </segment>
+        </unit>
+        <unit id="faq_richsnippet.label">
+            <segment>
+                <source>Output as FAQ Microdata (Schema.org)</source>
+            </segment>
+        </unit>
+        <unit id="faq_items.label">
+            <segment>
+                <source>FAQ Items</source>
+            </segment>
+        </unit>
+        <unit id="faq_items.question.label">
+            <segment>
+                <source>Question</source>
+            </segment>
+        </unit>
+        <unit id="faq_items.answer.label">
+            <segment>
+                <source>Answer</source>
+            </segment>
+        </unit>
+    </file>
+</xliff>

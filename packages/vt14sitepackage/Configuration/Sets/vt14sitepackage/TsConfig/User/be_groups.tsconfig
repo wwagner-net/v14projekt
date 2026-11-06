@@ -1,0 +1,5 @@
+page.TCEFORM.tt_content.header_link.types.textmedia.disabled = 1
+
+options {
+  clearCache.pages = 1
+}

@@ -1,0 +1,13 @@
+vendor: wwagner
+extension: vt14sitepackage
+content-type: content-element
+skeleton-path: packages/vt14sitepackage/ContentBlocks/content-blocks-skeleton/
+
+config:
+  content-element:
+    basics:
+      - TYPO3/Appearance
+      - TYPO3/Links
+      - TYPO3/Categories
+    group: default
+    prefixFields: false

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/fileMessages.xlf" date="2015-11-10T06:53:10Z" product-name="core" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="FileUtility.CouldNotDeleteDirectory1" x-unused-since="14.1" approved="yes">
+        <source>Could not delete directory "%s"! There might be a problem with write permissions.</source>
+        <target state="final">¡No pudo eliminar el directorio "%s"! Puede haber un problema con los permisos de escritura.</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileCopiedTo" approved="yes">
+        <source>File "%s" copied to "%s".</source>
+        <target state="final">Archivo "%s" copiado en "%s".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileExtensionIsNotzip" x-unused-since="14.1" approved="yes">
+        <source>File extension is not "zip".</source>
+        <target state="final">La extensión del archivo no es "zip".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileMovedTo" approved="yes">
+        <source>File "%s" moved to "%s".</source>
+        <target state="final">Archivo "%s" movido a "%s".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileOrDestinationWasNotWithinYourMountpoints" x-unused-since="14.1" approved="yes">
+        <source>File "%s" or destination "%s" was not within your mountpoints!</source>
+        <target state="final">¡El archivo "%s" o el destino "%s" no estaban dentro de sus puntos de montaje!</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileRenamedFromTo" approved="yes">
+        <source>File renamed from "%s" to "%s".</source>
+        <target state="final">Archivo renombrado de "%s" a "%s".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileSavedTo" approved="yes">
+        <source>File saved to "%s".</source>
+        <target state="final">Archivo guardado en "%s".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.FileWasNotSaved2" x-unused-since="14.1" approved="yes">
+        <source>File "%s" was not saved! File extension rejected!</source>
+        <target state="final">¡Archivo "%s" no fue guardado! ¡Se ha rechazado la extensión del archivo!</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.UnzippingFileIn" x-unused-since="14.1" approved="yes">
+        <source>Unzipping file "%s" in "%s".</source>
+        <target state="final">Descomprimiendo el archivo "%s" en "%s".</target>
+      </trans-unit>
+      <trans-unit id="FileUtility.YouAreNotAllowedToUnzipFiles" x-unused-since="14.1" approved="yes">
+        <source>You are not allowed to unzip files.</source>
+        <target state="final">No se le permite descomprimir archivos.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

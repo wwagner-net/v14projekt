@@ -1,0 +1,36 @@
+categories:
+  vt14sitepackage:
+  vt14sitepackage.pageUids:
+    parent: vt14sitepackage
+  vt14sitepackage.headerbutton:
+    parent: vt14sitepackage
+  vt14sitepackage.copyrightinfo:
+    parent: vt14sitepackage
+  vt14sitepackage.socialicons:
+    parent: vt14sitepackage
+    
+settings:
+  vt14sitepackage.metaMenuUid:
+    category: vt14sitepackage.pageUids
+    type: page
+    default: 0
+  vt14sitepackage.buttonText:
+    category: vt14sitepackage.headerbutton
+    type: string
+    default: ''
+  vt14sitepackage.buttonLink:
+    category: vt14sitepackage.headerbutton
+    type: string
+    default: ''
+  vt14sitepackage.buttonColor:
+    category: vt14sitepackage.headerbutton
+    type: color
+    default: '#8bb83b'
+  vt14sitepackage.copyrighttext:
+    category: vt14sitepackage.copyrightinfo
+    type: string
+    default: 'Innovatech Solutions'
+  vt14sitepackage.socialicons:
+    category: vt14sitepackage.socialicons
+    type: stringlist
+    default: ['']

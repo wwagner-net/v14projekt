@@ -1,0 +1,31 @@
+name: wwagner/hero
+typeName: wwagner_hero
+group: default
+prefixFields: false
+prefixType: full
+basics:
+  - TYPO3/Categories
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  - identifier: image
+    useExistingField: true
+    minitems: 1
+    maxitems: 1
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+    label: 'Text über dem Button'
+  - identifier: button_text
+    type: Text
+    label: 'Text im Button'
+    l10n_mode: prefixLangTitle
+  - identifier: header_link
+    useExistingField: true
+    allowdTypes:
+      - page
+      - url
+      - file
+      - email
+      - telephone

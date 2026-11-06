@@ -1,0 +1,31 @@
+name: wwagner/cta
+typeName: wwagner_cta
+group: marketing
+prefixFields: false
+prefixType: full
+basics:
+  - TYPO3/Categories
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  - identifier: header_link
+    useExistingField: true
+  - identifier: subheader
+    useExistingField: true
+  - identifier: ctabgr
+    type: Color
+    default: '#00ff00'
+    opacity: true
+    valuePicker:
+      items:
+        - label: 'Red'
+          value: '#ff0000'
+        - label: 'Green'
+          value: '#00ff00'
+        - label: 'Blue'
+          value: '#0000ff'
+        - label: 'TYPO3 Orange'
+          value: '#ff8700'

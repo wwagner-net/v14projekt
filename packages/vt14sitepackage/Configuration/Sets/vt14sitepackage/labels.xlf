@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+	<file id="vt14sitepackage-settings">
+		<!-- Category Labels -->
+		<unit id="categories.vt14sitepackage">
+			<segment>
+				<source>Video training package</source>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.pageUids">
+			<segment>
+				<source>Various page IDs</source>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.headerbutton">
+			<segment>
+				<source>Button next to main navigation</source>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.copyrightinfo">
+			<segment>
+				<source>Copyright information in footer</source>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.socialicons">
+			<segment>
+				<source>Links to social media profiles</source>
+			</segment>
+		</unit>
+
+		<!-- Settings Labels -->
+		<unit id="settings.vt14sitepackage.metaMenuUid">
+			<segment>
+				<source>UID of the separator for meta navigation</source>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonText">
+			<segment>
+				<source>Button text</source>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.buttonText">
+			<segment>
+				<source>Text displayed on the button in the header next to the main navigation</source>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonLink">
+			<segment>
+				<source>Button link target</source>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.buttonLink">
+			<segment>
+				<source>URL or page UID where the header button should link to (e.g., t3://page?uid=123)</source>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonColor">
+			<segment>
+				<source>Background color of the button</source>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.copyrighttext">
+			<segment>
+				<source>Copyright text in footer</source>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.copyrighttext">
+			<segment>
+				<source>Copyright text or company name displayed in the footer area</source>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.socialicons">
+			<segment>
+				<source>Social icons in footer</source>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.socialicons">
+			<segment>
+				<source>Please use the following format: Link,iconname (Example: https://www.linkedin.com/in/profilname/,linkedin). For possible icon name parameters, see: https://icons.getbootstrap.com/</source>
+			</segment>
+		</unit>
+	</file>
+</xliff>

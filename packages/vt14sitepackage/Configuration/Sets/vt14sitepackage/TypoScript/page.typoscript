@@ -1,0 +1,13 @@
+page = PAGE
+
+page {
+  bodyTagCObject = TEXT
+  bodyTagCObject.dataWrap = <body id="uid{field:uid}" class="pid{field:pid}">
+
+  10 = PAGEVIEW
+  10 {
+    paths {
+      100 = EXT:vt14sitepackage/Resources/Private/PageView/
+    }
+  }
+}

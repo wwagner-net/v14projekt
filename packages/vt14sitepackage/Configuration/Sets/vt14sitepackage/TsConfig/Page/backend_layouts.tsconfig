@@ -1,0 +1,100 @@
+mod.web_layout.BackendLayouts {
+  default {
+    title = Default
+    icon = EXT:vt14sitepackage/Resources/Public/Images/Icons/backend_layout_default.svg
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Main
+                colspan = 3
+                colPos = 0
+                identifier = main
+                # allowedContentTypes = text,textpic
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Footer left
+                colPos = 1
+                identifier = left
+                slideMode = slide
+                # disallowedContentTypes = text,textmedia
+              }
+              2 {
+                name = Footer Center
+                colPos = 2
+                identifier = center
+                slideMode = slide
+              }
+              3 {
+                name = Footer right
+                colPos = 3
+                identifier = right
+                slideMode = slide
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mod.web_layout.BackendLayouts {
+  sidebar {
+    title = Sidebar
+    icon = EXT:vt14sitepackage/Resources/Public/Images/Icons/backend_layout_sidebar.svg
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Main
+                colspan = 2
+                colPos = 0
+                identifier = main
+              }
+              2 {
+                name = Sidebar
+                colPos = 4
+                identifier = sidebar
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Footer left
+                colPos = 1
+                identifier = left
+                slideMode = slide
+              }
+              2 {
+                name = Footer Center
+                colPos = 2
+                identifier = center
+                slideMode = slide
+              }
+              3 {
+                name = Footer right
+                colPos = 3
+                identifier = right
+                slideMode = slide
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

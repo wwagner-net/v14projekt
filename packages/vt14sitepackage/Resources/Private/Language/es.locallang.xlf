@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="es">
+	<file id="vt14sitepackage">
+		<!-- General translations for the VT14 Site Package -->
+		<!-- Add your translation units here -->
+		<unit id="vt14sitepackage.homelinktext">
+			<segment state="final">
+				<source>Link to homepage</source>
+				<target>Enlace a la página de inicio</target>
+			</segment>
+		</unit>
+	</file>
+</xliff>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16">
+  <path fill="#FFF" d="M1 1h14v14H1z"/>
+  <path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/>
+  <!-- Left image column -->
+  <rect x="3" y="3" width="4" height="10" fill="#59F"/>
+  <!-- Person silhouette: head -->
+  <circle cx="5" cy="5.5" r="1.5" fill="#FFF" opacity="0.75"/>
+  <!-- Person silhouette: body -->
+  <path fill="#FFF" opacity="0.55" d="M3 8.5h4v2.5C5.5 12 3 11 3 8.5z"/>
+  <!-- Active tab (right column, top) -->
+  <rect x="8" y="3" width="2.5" height="1.5" fill="#59F"/>
+  <!-- Inactive tab -->
+  <rect x="11" y="3" width="2" height="1.5" fill="#C8D0E0"/>
+  <!-- Tab underline separator -->
+  <rect x="8" y="4.5" width="5" height=".25" fill="#59F"/>
+  <!-- Tab content heading -->
+  <rect x="8" y="6" width="5" height="1" fill="#555"/>
+  <!-- Tab content text lines -->
+  <rect x="8" y="8" width="5" height=".75" fill="#B9B9B9"/>
+  <rect x="8" y="9.5" width="5" height=".75" fill="#B9B9B9"/>
+  <rect x="8" y="11" width="4" height=".75" fill="#B9B9B9"/>
+  <rect x="8" y="12.5" width="3" height=".75" fill="#B9B9B9"/>
+</svg>

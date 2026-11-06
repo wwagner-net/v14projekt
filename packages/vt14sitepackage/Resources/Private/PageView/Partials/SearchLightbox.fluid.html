@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <i class="bi bi-search search_button"></i>
+    <div id="searchlightbox" class="searchlightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <div class="tx-indexedsearch-searchbox">
+                <form method="post" id="tx_indexedsearch_header" action="{searchTargetUri}">
+                    <div class="tx-indexedsearch-hidden-fields">
+                        <input type="hidden" name="tx_indexedsearch_pi2[action]" value="search"/>
+                        <input type="hidden" name="tx_indexedsearch_pi2[controller]" value="Search"/>
+                        <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0"/>
+                        <input type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_"/>
+                        <input type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0"/>
+                    </div>
+                    <div class="tx-indexedsearch-form">
+                        <label class="visually-hidden" for="tx-indexedsearch-searchbox-sword">
+                            <f:translate key="form.searchFor" extensionName="IndexedSearch" default="Search"/>
+                        </label>
+                        <input
+                            type="text"
+                            name="tx_indexedsearch_pi2[search][sword]"
+                            id="tx-indexedsearch-searchbox-sword"
+                            class="tx-indexedsearch-searchbox-sword form-control"
+                            placeholder="{f:translate(key: 'form.searchFor', extensionName: 'IndexedSearch', default: 'Search')}"
+                        />
+                        <input
+                            type="submit"
+                            name="tx_indexedsearch_pi2[search][submitButton]"
+                            value="{f:translate(key: 'form.submit', extensionName: 'IndexedSearch', default: 'Search')}"
+                            id="tx-indexedsearch-searchbox-button-submit"
+                            class="tx-indexedsearch-searchbox-button btn btn-primary"
+                        />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</f:spaceless>
+</html>

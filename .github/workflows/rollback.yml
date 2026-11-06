@@ -1,0 +1,44 @@
+name: Rollback
+
+# Manuell starten: Reiter "Actions" → "Rollback" → "Run workflow".
+# Stellt den Symlink "current" auf den vorherigen Release zurück.
+# Achtung: main enthält danach weiter den fehlerhaften Stand. Den Fehler
+# zusätzlich per "git revert" beheben, sonst deployt der nächste Push ihn erneut.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: production
+      cancel-in-progress: false
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Install PHP and Composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+
+      - name: Install Deployer
+        run: |
+          composer global require deployer/deployer:^8
+          echo "$HOME/.composer/vendor/bin" >> $GITHUB_PATH
+
+      - name: SSH-Agent starten und Schlüssel hinzufügen
+        uses: webfactory/ssh-agent@v0.10.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: SSH konfigurieren
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Rollback auf Produktion
+        run: |
+          dep rollback production -vvv

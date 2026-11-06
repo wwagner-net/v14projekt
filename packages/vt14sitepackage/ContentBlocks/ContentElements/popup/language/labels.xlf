@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-04-25T12:16:18+00:00" product-name="wwagner/popup">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Popup</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Popup element that appears automatically after a configurable delay, with a lightbox effect and slide-in animation from below.</source>
+      </trans-unit>
+      <trans-unit id="header.label">
+        <source>Internal name (not visible in frontend)</source>
+      </trans-unit>
+      <trans-unit id="tab_content.label">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="image.label">
+        <source>Background image</source>
+      </trans-unit>
+      <trans-unit id="bodytext.label">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="tab_settings.label">
+        <source>Settings</source>
+      </trans-unit>
+      <trans-unit id="popup_delay.label">
+        <source>Delay (seconds)</source>
+      </trans-unit>
+      <trans-unit id="popup_delay.description">
+        <source>After how many seconds should the popup appear automatically?</source>
+      </trans-unit>
+      <trans-unit id="popup_frequency.label">
+        <source>Display frequency</source>
+      </trans-unit>
+      <trans-unit id="popup_frequency.description">
+        <source>How often should the popup be shown to a visitor?</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

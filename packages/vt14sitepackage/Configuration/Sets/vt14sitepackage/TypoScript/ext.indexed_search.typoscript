@@ -1,0 +1,23 @@
+plugin.tx_indexedsearch {
+  _LOCAL_LANG {
+    de {
+      form.submit = Finden
+    }
+    es {
+      form.submit = Buscar
+    }
+    default {
+      form.submit = Find
+    }
+  }
+  view {
+    partialRootPaths {
+      100 = EXT:vt14sitepackage/Resources/Private/Extensions/indexed_search/Partials/
+    }
+  }
+  settings {
+    blind {
+      # numberOfResults = 1
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+	"require": {
+		"typo3/cms-adminpanel": "^14.3",
+		"typo3/cms-backend": "^14.3",
+		"typo3/cms-belog": "^14.3",
+		"typo3/cms-beuser": "^14.3",
+		"typo3/cms-core": "^14.3",
+		"typo3/cms-dashboard": "^14.3",
+		"typo3/cms-extbase": "^14.3",
+		"typo3/cms-extensionmanager": "^14.3",
+		"typo3/cms-felogin": "^14.3",
+		"typo3/cms-filelist": "^14.3",
+		"typo3/cms-filemetadata": "^14.3",
+		"typo3/cms-fluid": "^14.3",
+		"typo3/cms-fluid-styled-content": "^14.3",
+		"typo3/cms-form": "^14.3",
+		"typo3/cms-frontend": "^14.3",
+		"typo3/cms-impexp": "^14.3",
+		"typo3/cms-indexed-search": "^14.3",
+		"typo3/cms-info": "^14.3",
+		"typo3/cms-install": "^14.3",
+		"typo3/cms-linkvalidator": "^14.3",
+		"typo3/cms-lowlevel": "^14.3",
+		"typo3/cms-opendocs": "^14.3",
+		"typo3/cms-reactions": "^14.3",
+		"typo3/cms-recycler": "^14.3",
+		"typo3/cms-redirects": "^14.3",
+		"typo3/cms-reports": "^14.3",
+		"typo3/cms-rte-ckeditor": "^14.3",
+		"typo3/cms-scheduler": "^14.3",
+		"typo3/cms-seo": "^14.3",
+		"typo3/cms-setup": "^14.3",
+		"typo3/cms-sys-note": "^14.3",
+		"typo3/cms-tstemplate": "^14.3",
+		"typo3/cms-viewpage": "^14.3",
+		"typo3/cms-webhooks": "^14.3",
+		"typo3/cms-workspaces": "^14.3",
+		"wwagner/vt14sitepackage": "@dev",
+		"friendsoftypo3/content-blocks": "^2.3",
+		"helhum/typo3-console": "^9.0"
+	},
+	"config": {
+		"platform": {
+			"php": "8.5"
+		},
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		}
+	},
+	"repositories": [
+		{
+			"name": "local",
+			"type": "path",
+			"url": "./packages/*"
+		}
+	],
+	"scripts": {
+		"typo3-cms-scripts": [
+			"typo3 cache:flush -g system",
+			"typo3 database:updateschema '*.add,*.change'",
+			"typo3 fluid:cache:warmup"
+		],
+		"post-autoload-dump": [
+			"@typo3-cms-scripts"
+		]
+	}
+}

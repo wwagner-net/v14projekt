@@ -1,0 +1,33 @@
+name: wwagner/faq
+typeName: wwagner_faq
+group: default
+prefixFields: false
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Categories
+fields:
+  - identifier: header
+    useExistingField: true
+    label: 'FAQ heading (optional)'
+  - identifier: faq_richsnippet
+    type: Checkbox
+    label: 'Output as FAQ Microdata (Schema.org)'
+    default: 0
+  - identifier: faq_items
+    type: Collection
+    label: 'FAQ Items'
+    labelField: question
+    minitems: 1
+    appearance:
+      levelLinksPosition: both
+    fields:
+      - identifier: question
+        type: Text
+        required: true
+        label: 'Question'
+      - identifier: answer
+        type: Textarea
+        enableRichtext: true
+        required: true
+        label: 'Answer'

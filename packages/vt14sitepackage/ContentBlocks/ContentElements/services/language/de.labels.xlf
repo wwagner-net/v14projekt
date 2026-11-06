@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" target-language="de" date="2026-04-25T10:53:19+00:00" product-name="wwagner/services">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Services</source>
+        <target>Leistungen</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Element containing a variable number of text boxes with icons</source>
+        <target>Element mit einer variablen Anzahl von Textboxen mit Icons</target>
+      </trans-unit>
+      <trans-unit id="header.label">
+        <source>Element title (not visible in frontend)</source>
+        <target>Elementtitel (nicht im Frontend sichtbar)</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.label">
+        <source>Service elements</source>
+        <target>Leistungselemente</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.title.label">
+        <source>Element header</source>
+        <target>Element-Überschrift</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.bodytext.label">
+        <source>Element text</source>
+        <target>Elementtext</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.link.label">
+        <source>Link</source>
+        <target>Link</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.label">
+        <source>Icon</source>
+        <target>Icon</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.description">
+        <source>Bootstrap-Icon, see https://icons.getbootstrap.com</source>
+        <target>Bootstrap-Icon, siehe https://icons.getbootstrap.com</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-briefcase.label">
+        <source>Briefcase</source>
+        <target>Aktentasche</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-laptop.label">
+        <source>Laptop</source>
+        <target>Laptop</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-code-slash.label">
+        <source>Code</source>
+        <target>Code</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-server.label">
+        <source>Server</source>
+        <target>Server</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-shield-lock.label">
+        <source>Shield Lock</source>
+        <target>Sicherheitsschloss</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-database.label">
+        <source>Database</source>
+        <target>Datenbank</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-cloud.label">
+        <source>Cloud</source>
+        <target>Cloud</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-graph-up.label">
+        <source>Graph Up</source>
+        <target>Aufsteigendes Diagramm</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-terminal.label">
+        <source>Terminal</source>
+        <target>Terminal</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-globe.label">
+        <source>Globe</source>
+        <target>Globus</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-person-workspace.label">
+        <source>Person Workspace</source>
+        <target>Persönlicher Arbeitsbereich</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-tools.label">
+        <source>Tools</source>
+        <target>Werkzeuge</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-file-code.label">
+        <source>File Code</source>
+        <target>Code-Datei</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-lock-fill.label">
+        <source>Lock Fill</source>
+        <target>Schloss (gefüllt)</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-bug.label">
+        <source>Bug</source>
+        <target>Fehler</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-diagram-3.label">
+        <source>Network</source>
+        <target>Netzwerk</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-cpu.label">
+        <source>CPU</source>
+        <target>CPU</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-wifi.label">
+        <source>Wifi</source>
+        <target>WLAN</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-chat-dots.label">
+        <source>Chat Dots</source>
+        <target>Chat</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-eye-fill.label">
+        <source>Eye Fill</source>
+        <target>Auge (gefüllt)</target>
+      </trans-unit>
+      <trans-unit id="serviceelements.icon.items.bi-rocket.label">
+        <source>Rocket</source>
+        <target>Rakete</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

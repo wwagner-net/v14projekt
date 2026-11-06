@@ -1,0 +1,43 @@
+name: wwagner/services
+typeName: wwagner_services
+group: default
+prefixFields: false
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+  - TYPO3/Categories
+fields:
+  -
+    identifier: header
+    useExistingField: true
+    label: 'Titel des Elements (nicht sichtbar im Frontend)'
+  - identifier: serviceelements
+    type: Collection
+    label: 'Service Elemente'
+    minitems: 1
+    labelField: title
+    appearance:
+      levelLinksPosition: both
+    fields:
+      - identifier: title
+        type: Text
+        required: true
+        label: 'Überschrift des Elements'
+        l10n_mode: prefixLangTitle
+      - identifier: bodytext
+        type: Textarea
+        enableRichtext: true
+        label: 'Text im Element'
+        l10n_mode: prefixLangTitle
+      - identifier: link
+        type: Link
+        allowedTypes:
+          - page
+          - url
+          - file
+          - email
+          - telephone
+        label: 'Link'
+      - identifier: wwagner/icons
+        type: Basic

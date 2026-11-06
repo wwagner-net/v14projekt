@@ -1,0 +1,118 @@
+
+identifier: kontakt_1
+type: Form
+label: Kontakt
+prototypeName: standard
+renderingOptions:
+  submitButtonLabel: 'Nachricht verschicken'
+finishers:
+  -
+    options:
+      title: ''
+      message: ''
+      subject: '{text-2}'
+      recipients:
+        videotraining@wwagner.net: 'Wolfgang Wagner'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      translation:
+        language: default
+      errorMessage: ''
+      attachUploads: true
+      senderAddress: noreply@mein-v14-projekt.ddev.site
+      replyToRecipients:
+        '{email-1}': '{text-1}'
+    identifier: EmailToReceiver
+    defaultValue: ''
+  -
+    options:
+      title: ''
+      message: "<p>Hallo,&nbsp;</p>\n<p>danke für Ihre Nachricht.</p>\n<p>Wir melden uns irgendwann, oder so.</p>\n<p>Viele Grüße<br>Wer auch immer</p>"
+      subject: 'Danke für Ihre Nachricht an XY'
+      recipients:
+        '{email-1}': '{text-1}'
+      senderName: 'Innovatch Solutions GmbH'
+      addHtmlPart: true
+      translation:
+        language: default
+      errorMessage: ''
+      attachUploads: true
+      senderAddress: kontakt@mein-v14-projekt.ddev.site
+    identifier: EmailToSender
+    defaultValue: ''
+  -
+    options:
+      message: '<p>Danke für <strong>Ihre Nachricht.</strong> Wir melden uns.</p>'
+      errorMessage: ''
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    type: Page
+    label: ''
+    identifier: page-1
+    renderables:
+      -
+        type: Text
+        label: 'Dein Name'
+        identifier: text-1
+        properties:
+          elementDescription: 'Format: Vorname Nachname'
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Vorname Nachname'
+            autocomplete: name
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: Email
+        label: 'Deine E-Mailadresse'
+        identifier: email-1
+        properties:
+          elementDescription: name@domain.de
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: name@domain.de
+            autocomplete: email
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: Text
+        label: Betreff
+        identifier: text-2
+        properties:
+          elementDescription: "Um was geht's denn?"
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: Textarea
+        label: 'Deine Nachricht'
+        identifier: textarea-1
+        properties:
+          elementDescription: 'Beschreibe so gut es geht dein Anliegen'
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: StaticText
+        label: ''
+        identifier: statictext-1
+        properties:
+          text: '<p>Eingabefelder mit einem Stern (*) sind Pflichtangaben, bitte ausfüllen.</p>'
+    renderingOptions:
+      nextButtonLabel: 'Next step'
+      previousButtonLabel: 'Previous step'
+variants: {  }

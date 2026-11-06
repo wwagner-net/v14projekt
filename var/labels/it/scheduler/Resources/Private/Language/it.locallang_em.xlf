@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:scheduler/Resources/Private/Language/locallang_em.xlf" date="2011-10-17T20:22:32Z" product-name="scheduler" target-language="it">
+    <header/>
+    <body>
+      <trans-unit id="scheduler.config.maxLifetime" approved="yes">
+        <source>Maximum lifetime: Set the maximum runtime (in minutes) for a scheduler task. Tasks still running after this time are removed from the execution list but are not stopped.</source>
+        <target state="final">Durata massima: imposta il tempo di esecuzione massimo (in minuti) per un'attività pianificata. Le attività ancora in esecuzione, dopo questo tempo, vengono rimosse dalla lista di esecuzione ma non vengono fermate.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

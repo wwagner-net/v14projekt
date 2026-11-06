@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+	<file id="vt14sitepackage-settings">
+		<!-- Category Labels -->
+		<unit id="categories.vt14sitepackage">
+			<segment>
+				<source>Video training package</source>
+				<target>Sitepackage des Videotrainings</target>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.pageUids">
+			<segment>
+				<source>Various page IDs</source>
+				<target>Verschiedene Seiten-IDs</target>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.headerbutton">
+			<segment state="final">
+				<source>Button next to main navigation</source>
+				<target>Button neben der Hauptnavigation</target>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.copyrightinfo">
+			<segment state="final">
+				<source>Copyright information in footer</source>
+				<target>Copyright Information im Footer</target>
+			</segment>
+		</unit>
+		<unit id="categories.vt14sitepackage.socialicons">
+			<segment state="final">
+				<source>Links to social media profiles</source>
+				<target>Links zu Social Media Profilen</target>
+			</segment>
+		</unit>
+
+		<!-- Settings Labels -->
+		<unit id="settings.vt14sitepackage.metaMenuUid">
+			<segment>
+				<source>UID of the separator for meta navigation</source>
+				<target>UID des Einstiegspunkt der Meta-Navigation</target>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonText">
+			<segment state="final">
+				<source>Button text</source>
+				<target>Text des Buttons</target>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.buttonText">
+			<segment state="final">
+				<source>Text displayed on the button in the header next to the main navigation</source>
+				<target>Text, der auf dem Button im Header neben der Hauptnavigation angezeigt wird</target>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonLink">
+			<segment state="final">
+				<source>Button link target</source>
+				<target>Linkziel des Buttons</target>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.buttonLink">
+			<segment state="final">
+				<source>URL or page UID where the header button should link to (e.g., t3://page?uid=123)</source>
+				<target>URL oder Seiten-UID, zu der der Header-Button verlinken soll (z.B. t3://page?uid=123)</target>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.buttonColor">
+			<segment state="final">
+				<source>Background color of the button</source>
+				<target>Hintergrundfarbe des Buttons</target>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.copyrighttext">
+			<segment state="final">
+				<source>Copyright text in footer</source>
+				<target>Copyright Text im Footer</target>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.copyrighttext">
+			<segment state="final">
+				<source>Copyright text or company name displayed in the footer area</source>
+				<target>Copyright-Text oder Firmenname, der im Footer-Bereich angezeigt wird</target>
+			</segment>
+		</unit>
+		<unit id="settings.vt14sitepackage.socialicons">
+			<segment state="final">
+				<source>Social icons in footer</source>
+				<target>Social Icons im Footer</target>
+			</segment>
+		</unit>
+		<unit id="settings.description.vt14sitepackage.socialicons">
+			<segment state="final">
+				<source>Please use the following format: Link,iconname (Example: https://www.linkedin.com/in/profilname/,linkedin). For possible icon name parameters, see: https://icons.getbootstrap.com/</source>
+				<target>Bitte folgendes Format einhalten: Link,iconname (Beispiel: https://www.linkedin.com/in/profilname/,linkedin). Mögliche Icon-Name-Parameter siehe: https://icons.getbootstrap.com/</target>
+			</segment>
+		</unit>
+	</file>
+</xliff>

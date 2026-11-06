@@ -1,0 +1,13 @@
+styles.content.textmedia.maxW: 1296
+styles.content.textmedia.maxWInText: 648
+styles.content.textmedia.linkWrap.lightboxEnabled: true
+styles.content.textmedia.linkWrap.lightboxCssClass: glightbox
+styles.content.textmedia.linkWrap.width: 1200m
+styles.content.textmedia.linkWrap.height: 1200m
+indexedsearch.targetPid: '30'
+indexedsearch.rootPidList: '1'
+indexedsearch.pagination_type: slidingWindow
+indexedsearch.page_links: 10
+email.layoutRootPaths:
+  - 'EXT:vt14sitepackage/Resources/Private/Extensions/core/Layouts/'
+styles.content.defaultHeaderType: 1

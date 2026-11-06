@@ -1,0 +1,61 @@
+name: wwagner/popup
+typeName: wwagner_popup
+group: marketing
+prefixFields: false
+prefixType: full
+fields:
+  - identifier: test
+    type: Textarea
+    enableRichtext: true
+    label: 'Test'
+  - identifier: header
+    useExistingField: true
+    label: 'Interner Name (nur im Backend sichtbar)'
+
+  - identifier: tab_content
+    type: Tab
+    label: 'Inhalt'
+
+  - identifier: image
+    useExistingField: true
+    minitems: 0
+    maxitems: 1
+    label: 'Hintergrundbild'
+
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+    label: 'Inhalt'
+
+  - identifier: tab_settings
+    type: Tab
+    label: 'Einstellungen'
+
+  - identifier: popup_delay
+    type: Number
+    label: 'Verzögerung (Sekunden)'
+    default: 3
+    description: 'Nach wie vielen Sekunden erscheint das Pop-up automatisch?'
+    range:
+      lower: 0
+      upper: 60
+
+  - identifier: popup_frequency
+    type: Select
+    renderType: selectSingle
+    label: 'Häufigkeit der Anzeige'
+    default: 'once'
+    description: 'Wie oft wird das Pop-up einem Besucher angezeigt?'
+    items:
+      - label: 'Immer anzeigen'
+        value: always
+      - label: 'Einmalig (nie wieder)'
+        value: once
+      - label: 'Einmal pro Sitzung'
+        value: session
+      - label: 'Einmal täglich'
+        value: daily
+      - label: 'Einmal wöchentlich'
+        value: weekly
+      - label: 'Einmal monatlich'
+        value: monthly

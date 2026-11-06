@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+    <file id="about">
+        <unit id="title">
+            <segment state="final">
+                <source>About Section</source>
+                <target>Über uns-Bereich</target>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment state="final">
+                <source>About section with multiple tabs.</source>
+                <target>Über uns-Bereich mit mehreren Registerkarten.</target>
+            </segment>
+        </unit>
+        <unit id="image.label">
+            <segment state="final">
+                <source>Image</source>
+                <target>Bild</target>
+            </segment>
+        </unit>
+        <unit id="tabs.label">
+            <segment state="final">
+                <source>About sections</source>
+                <target>Über uns-Abschnitte</target>
+            </segment>
+        </unit>
+        <unit id="tabs.title.label">
+            <segment state="final">
+                <source>Section header</source>
+                <target>Abschnittsüberschrift</target>
+            </segment>
+        </unit>
+        <unit id="tabs.subheader.label">
+            <segment state="final">
+                <source>Subheader</source>
+                <target>Unterüberschrift</target>
+            </segment>
+        </unit>
+        <unit id="tabs.bodytext.label">
+            <segment state="final">
+                <source>Section content</source>
+                <target>Abschnittsinhalt</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

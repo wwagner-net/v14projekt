@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+    <file id="cta">
+        <unit id="title">
+            <segment>
+                <source>Call to action</source>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment>
+                <source>Call to action area</source>
+            </segment>
+        </unit>
+        <unit id="header_link.label">
+            <segment>
+                <source>CTA Link</source>
+            </segment>
+        </unit>
+        <unit id="subheader.label">
+            <segment>
+                <source>Button Text</source>
+            </segment>
+        </unit>
+        <unit id="ctabgr.label">
+            <segment>
+                <source>CTA Background Color</source>
+            </segment>
+        </unit>
+    </file>
+</xliff>

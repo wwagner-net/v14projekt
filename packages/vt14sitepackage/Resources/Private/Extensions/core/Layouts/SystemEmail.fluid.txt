@@ -1,0 +1,7 @@
+<f:spaceless><f:render section="Title" optional="true" />
+<f:render section="Main" /></f:spaceless>
+
+Innovatech Solutions GmbH
+Teststr. 1
+12345 Testort
+Germany

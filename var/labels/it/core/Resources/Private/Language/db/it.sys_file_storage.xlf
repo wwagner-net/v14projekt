@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="it">
+  <file id="f1">
+    <unit id="is_offline">
+      <segment state="final">
+        <source>offline</source>
+        <target>non in linea</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_path">
+      <segment state="final">
+        <source>Base path</source>
+        <target>Percorso Base</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_path_placeholder">
+      <segment state="final">
+        <source>Add storage path here. For example: myPath/folder/</source>
+        <target>Aggiungi qui il percorso di memorizzazione. Ad esempio: myPath/cartella/</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_uri">
+      <segment state="final">
+        <source>Base URI</source>
+        <target>URI Base</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.base_uri_placeholder">
+      <segment state="final">
+        <source>Use this URI to build the public URL of files, instead of deriving the URI from base path</source>
+        <target>Usa questo URI per generare l'URL pubblico dei file, invece di ricavare l'URI dal percorso di base</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type">
+      <segment state="final">
+        <source>Path type</source>
+        <target>Tipo di percorso</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type_relative">
+      <segment state="final">
+        <source>relative</source>
+        <target>relativo</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.path_type_absolute">
+      <segment state="final">
+        <source>absolute</source>
+        <target>assoluto</target>
+      </segment>
+    </unit>
+    <unit id="local_driver.case_sensitive">
+      <segment state="final">
+        <source>Uses case sensitive identifiers</source>
+        <target>Utilizza identificatori con distinzione tra maiuscole e minuscole</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

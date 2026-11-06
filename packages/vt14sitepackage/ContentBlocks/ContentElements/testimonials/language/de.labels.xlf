@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+    <file id="testimonials">
+        <unit id="title">
+            <segment state="final">
+                <source>Testimonials</source>
+                <target>Kundenstimmen</target>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment state="final">
+                <source>Testimonial slider with name, position, photo, rating and a quote.</source>
+                <target>Kundenstimmen-Slider mit Name, Position, Foto, Bewertung und Zitat.</target>
+            </segment>
+        </unit>
+        <unit id="header.label">
+            <segment state="final">
+                <source>Element name (not visible in frontend)</source>
+                <target>Elementname (im Frontend nicht sichtbar)</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.label">
+            <segment state="final">
+                <source>Testimonials</source>
+                <target>Kundenstimmen</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.header.label">
+            <segment state="final">
+                <source>Name of the person</source>
+                <target>Name der Person</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.subheader.label">
+            <segment state="final">
+                <source>Position or company of the person</source>
+                <target>Position oder Unternehmen der Person</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.image.label">
+            <segment state="final">
+                <source>Image of the person</source>
+                <target>Bild der Person</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.label">
+            <segment state="final">
+                <source>Rating (0-5 stars)</source>
+                <target>Bewertung (0-5 Sterne)</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.0.label">
+            <segment state="final">
+                <source>0 stars</source>
+                <target>0 Sterne</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.1.label">
+            <segment state="final">
+                <source>1 star</source>
+                <target>1 Stern</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.2.label">
+            <segment state="final">
+                <source>2 stars</source>
+                <target>2 Sterne</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.3.label">
+            <segment state="final">
+                <source>3 stars</source>
+                <target>3 Sterne</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.4.label">
+            <segment state="final">
+                <source>4 stars</source>
+                <target>4 Sterne</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.rating.items.5.label">
+            <segment state="final">
+                <source>5 stars</source>
+                <target>5 Sterne</target>
+            </segment>
+        </unit>
+        <unit id="testimonials.bodytext.label">
+            <segment state="final">
+                <source>Quote</source>
+                <target>Zitat</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

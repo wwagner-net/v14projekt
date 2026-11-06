@@ -1,0 +1,22 @@
+.DS_Store
+.idea
+.vscode
+/var/*
+!/var/labels
+/vendor
+/public/*
+!/public/.htaccess
+!/config/system/settings.php
+!/config/system/additional.php
+*.gz
+*.cache
+database.sql
+db.sql
+.env
+scheduler-log.txt
+config.sh
+
+
+# Node.js
+/node_modules
+/package-lock.json

@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Header"/>
+<f:section name="Main">
+	<f:asset.css identifier="faq{data.uid}" href="{cb:assetPath()}/faq.css"/>
+    <div class="faq-element">
+        <f:if condition="{data.header}">
+            <h2 class="faq-element__title">{data.header}</h2>
+        </f:if>
+
+        <f:if condition="{data.faq_richsnippet}">
+            <f:then>
+                <div class="faq-element__list" itemscope itemtype="https://schema.org/FAQPage">
+                    <f:for each="{data.faq_items}" as="item">
+                        <details class="faq-element__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <summary class="faq-element__question" itemprop="name">{item.question}</summary>
+                            <div class="faq-element__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text"><f:render.text field="answer" record="{item}"/></div>
+                            </div>
+                        </details>
+                    </f:for>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="faq-element__list">
+                    <f:for each="{data.faq_items}" as="item">
+                        <details class="faq-element__item">
+                            <summary class="faq-element__question">{item.question}</summary>
+                            <div class="faq-element__answer">
+                                <f:render.text field="answer" record="{item}"/>
+                            </div>
+                        </details>
+                    </f:for>
+                </div>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+    <file id="cta">
+        <unit id="title">
+            <segment state="final">
+                <source>Call to action</source>
+                <target>Handlungsaufforderung</target>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment state="final">
+                <source>Call to action area</source>
+                <target>Bereich für Handlungsaufforderung</target>
+            </segment>
+        </unit>
+        <unit id="header_link.label">
+            <segment state="final">
+                <source>CTA Link</source>
+                <target>Handlungsaufforderungs-Link</target>
+            </segment>
+        </unit>
+        <unit id="subheader.label">
+            <segment state="final">
+                <source>Button Text</source>
+                <target>Schaltflächentext</target>
+            </segment>
+        </unit>
+        <unit id="ctabgr.label">
+            <segment state="final">
+                <source>CTA Background Color</source>
+                <target>CTA Hintergrundfarbe</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

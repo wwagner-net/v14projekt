@@ -1,0 +1,6 @@
+hosts:
+  production:
+    hostname: '185.30.32.135'
+    remote_user: 'web35'
+    port: '22'
+    deploy_path: '/home/www/t3crr26/production'

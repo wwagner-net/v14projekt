@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>image.srcset Viewhelper: https://docs.typo3.org/other/typo3/view-helper-reference/main/en-us/Global/Image/Srcset.html</f:comment>
+<picture>
+	<source
+		srcset="{f:image.srcset(image: file, srcset: '1320w, 1600w', cropVariant: 'default')}"
+		media="(min-width: 1280px)"
+		sizes="(min-width: 1320px) 1320px, 100vw"
+	/>
+	<source
+		srcset="{f:image.srcset(image: file, srcset: '768w, 1024w, 1280w', cropVariant: 'desktop')}"
+		media="(min-width: 768px)"
+		sizes="100vw"
+	/>
+	<source
+		srcset="{f:image.srcset(image: file, srcset: '600w, 768w', cropVariant: 'tablet')}"
+		media="(min-width: 600px)"
+		sizes="100vw"
+	/>
+	<source
+		srcset="{f:image.srcset(image: file, srcset: '400w, 600w', cropVariant: 'smartphone')}"
+		media="(max-width: 599px)"
+		sizes="100vw"
+	/>
+	<f:media
+		class="image-embed-item img-fluid"
+		file="{file}"
+		width="{dimensions.width}"
+		height="{dimensions.height}"
+		alt="{file.alternative ?: file.description}"
+		title="{file.title}"
+		cropVariant="desktop"
+		loading="{settings.media.lazyLoading}"
+	/>
+</picture>
+
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+    <file id="faq">
+        <unit id="title">
+            <segment state="final">
+                <source>FAQ</source>
+                <target>FAQ</target>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment state="final">
+                <source>FAQ accordion with configurable question-answer pairs. Optionally outputs Schema.org FAQ Rich Snippet markup.</source>
+                <target>FAQ-Akkordeon mit konfigurierbaren Frage-Antwort-Paaren. Gibt optional Schema.org FAQ Rich Snippet Markup aus.</target>
+            </segment>
+        </unit>
+        <unit id="header.label">
+            <segment state="final">
+                <source>FAQ heading (optional)</source>
+                <target>FAQ-Überschrift (optional)</target>
+            </segment>
+        </unit>
+        <unit id="faq_richsnippet.label">
+            <segment state="final">
+                <source>Output as FAQ Microdata (Schema.org)</source>
+                <target>Als FAQ Microdata ausgeben (Schema.org)</target>
+            </segment>
+        </unit>
+        <unit id="faq_items.label">
+            <segment state="final">
+                <source>FAQ Items</source>
+                <target>FAQ-Einträge</target>
+            </segment>
+        </unit>
+        <unit id="faq_items.question.label">
+            <segment state="final">
+                <source>Question</source>
+                <target>Frage</target>
+            </segment>
+        </unit>
+        <unit id="faq_items.answer.label">
+            <segment state="final">
+                <source>Answer</source>
+                <target>Antwort</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

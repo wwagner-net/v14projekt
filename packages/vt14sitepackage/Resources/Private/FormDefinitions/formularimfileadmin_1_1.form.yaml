@@ -1,0 +1,86 @@
+
+identifier: formularimfileadmin_1_1
+type: Form
+label: 'Formular im fileadmin'
+prototypeName: standard
+renderingOptions: {  }
+finishers:
+  -
+    options:
+      title: 'Confirmation of your message'
+      format: html
+      subject: 'Your message: {subject}'
+      recipients:
+        your.company@example.com: 'Your Company name'
+      senderName: '{name}'
+      translation:
+        language: ''
+      attachUploads: true
+      senderAddress: '{email}'
+      replyToRecipients: {  }
+      carbonCopyRecipients: {  }
+      blindCarbonCopyRecipients: {  }
+    identifier: EmailToReceiver
+renderables:
+  -
+    type: Page
+    label: 'Contact Form'
+    identifier: page-1
+    renderables:
+      -
+        type: Text
+        label: Name
+        identifier: name
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: Name
+            autocomplete: name
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: Text
+        label: Subject
+        identifier: subject
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: Subject
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+      -
+        type: Email
+        label: Email
+        identifier: email
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Email address'
+            autocomplete: email
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+        defaultValue: ''
+      -
+        type: Textarea
+        label: Message
+        identifier: message
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: ''
+        validators:
+          -
+            identifier: NotEmpty
+        defaultValue: ''
+  -
+    type: SummaryPage
+    label: 'Summary page'
+    identifier: summarypage
+variants: {  }

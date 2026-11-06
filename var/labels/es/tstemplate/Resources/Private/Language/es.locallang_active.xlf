@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:tstemplate/Resources/Private/Language/locallang_active.xlf" date="2011-10-17T20:22:37Z" product-name="tstemplate" target-language="es">
+    <header/>
+    <body>
+      <trans-unit id="panel.header.numberOfSearchMatches" x-unused-since="14.2" approved="yes">
+        <source>%s search match(es)</source>
+        <target state="final">%s resultados de búsqueda(s)</target>
+      </trans-unit>
+      <!-- Edit action -->
+      <!-- Update action -->
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,54 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+	data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="vt14-popup-css" href="{cb:assetPath()}/popup.css"/>
+<f:asset.script identifier="vt14-popup-js" src="{cb:assetPath()}/popup.js"/>
+
+<div
+	class="vt14-popup"
+	role="dialog"
+	aria-modal="true"
+	aria-label="{data.header}"
+	aria-hidden="true"
+	data-popup-uid="{data.uid}"
+	data-popup-delay="{data.popup_delay}"
+	data-popup-frequency="{data.popup_frequency}"
+>
+	<div class="vt14-popup__overlay" aria-hidden="true"></div>
+
+	<div class="vt14-popup__dialog">
+
+		<f:if condition="{data.image.0}">
+			<f:variable name="bgUrl" value="{f:uri.image(image: data.image.0, width: 1400)}"/>
+			<f:variable name="bgStyle">background-image: url({bgUrl});</f:variable>
+			<div
+				class="vt14-popup__bg"
+				style="{f:asset.styleAttr(value: bgStyle)}"
+				role="presentation"
+			></div>
+		</f:if>
+
+		<button
+			class="vt14-popup__close"
+			type="button"
+			data-popup-close="1"
+			aria-label="Pop-up schließen"
+		>
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="vt14-popup__content">
+			<f:if condition="{data.bodytext}">
+				<div class="vt14-popup__text">
+					<f:render.text field="bodytext" record="{data}"/>
+				</div>
+			</f:if>
+		</div>
+
+	</div>
+</div>
+
+</html>

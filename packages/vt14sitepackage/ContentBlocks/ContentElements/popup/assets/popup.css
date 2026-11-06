@@ -1,0 +1,173 @@
+/* =============================================================================
+   VT14 Popup — Content Block CSS
+   Lightbox-Overlay mit Slide-from-bottom-Animation
+   ============================================================================= */
+
+/* --- Popup-Wrapper (fixed, deckt das gesamte Viewport ab) --- */
+.vt14-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.vt14-popup--open,
+.vt14-popup--closing {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* --- Halbdurchsichtiger Hintergrund (Lightbox-Effekt) --- */
+.vt14-popup__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.vt14-popup--open .vt14-popup__overlay {
+    opacity: 1;
+}
+
+.vt14-popup--closing .vt14-popup__overlay {
+    opacity: 0;
+}
+
+/* --- Dialog-Box --- */
+.vt14-popup__dialog {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 680px;
+    max-height: 90dvh;
+    /* overflow: hidden klemmt das Bild auf die Dialog-Form und verhindert
+       Blur-Artefakte an den Rändern; das Scrollen übernimmt __content. */
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.45);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.vt14-popup--open .vt14-popup__dialog {
+    animation: vt14-popup-slide-in 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.vt14-popup--closing .vt14-popup__dialog {
+    animation: vt14-popup-slide-out 0.35s ease-in both;
+}
+
+/* --- Animationen: von unten nach Mitte / zurück nach unten --- */
+@keyframes vt14-popup-slide-in {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes vt14-popup-slide-out {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* --- Hintergrundbild: blur + leichte Aufhellung für dunkle Texte --- */
+.vt14-popup__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    /* Leicht vergrößern, damit der Blur keine weißen Ränder erzeugt */
+    transform: scale(1.08);
+    filter: blur(6px);
+}
+
+/* Weißer Schleier über dem Bild, damit dunkle Texte immer lesbar bleiben */
+.vt14-popup__bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+/* --- Scrollbarer Inhalt: wächst in den verfügbaren Raum und scrollt intern ---
+   Das Bild bleibt dabei durch position: absolute außerhalb des Scroll-Flows. */
+.vt14-popup__content {
+    position: relative;
+    z-index: 1;
+    /* flex: 1 + min-height: 0 erlaubt overflow-y: auto im Flex-Container */
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    /* Oben mehr Platz wegen des absolut positionierten Schließen-Buttons */
+    padding: 3.5rem 2.5rem 2.5rem;
+}
+
+.vt14-popup__text {
+    line-height: 1.6;
+}
+
+/* --- Schließen-Button --- */
+.vt14-popup__close {
+    position: absolute;
+    top: 0.875rem;
+    right: 0.875rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 1.375rem;
+    line-height: 1;
+    color: #222;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.vt14-popup__close:hover {
+    background-color: #fff;
+    transform: rotate(90deg) scale(1.1);
+}
+
+.vt14-popup__close:focus-visible {
+    outline: 2px solid #0060df;
+    outline-offset: 3px;
+}
+
+/* --- Scroll-Sperre auf dem body, solange das Pop-up offen ist --- */
+.vt14-popup-lock {
+    overflow: hidden;
+}
+
+/* --- Reduzierte Bewegung: Animationen auf Minimum reduzieren --- */
+@media (prefers-reduced-motion: reduce) {
+    .vt14-popup--open .vt14-popup__dialog,
+    .vt14-popup--closing .vt14-popup__dialog {
+        animation-duration: 0.01ms !important;
+    }
+
+    .vt14-popup__overlay {
+        transition-duration: 0.01ms !important;
+    }
+}

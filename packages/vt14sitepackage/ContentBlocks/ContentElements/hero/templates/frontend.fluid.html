@@ -1,0 +1,23 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<div id="c{data.uid}" class="hero section dark-background">
+
+	<img src="{f:uri.image(image: data.image.0, width: 1800)}" alt="" data-aos="fade-in" class="aos-init aos-animate">
+
+	<div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<h2>{data.header}</h2>
+				<f:render.text record="{data}" field="bodytext"/>
+				<f:link.typolink class="btn-get-started" parameter="{data.header_link}">
+					{data.button_text}
+				</f:link.typolink>
+			</div>
+		</div>
+	</div>
+
+</div>
+</html>

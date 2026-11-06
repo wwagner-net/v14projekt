@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+    <file id="team">
+        <unit id="title">
+            <segment state="final">
+                <source>Team</source>
+                <target>Team</target>
+            </segment>
+        </unit>
+        <unit id="description">
+            <segment state="final">
+                <source>Team photos</source>
+                <target>Team-Fotos</target>
+            </segment>
+        </unit>
+        <unit id="header.label">
+            <segment state="final">
+                <source>Name (not visible in frontend)</source>
+                <target>Name (im Frontend nicht sichtbar)</target>
+            </segment>
+        </unit>
+        <unit id="members.label">
+            <segment state="final">
+                <source>Team members</source>
+                <target>Teammitglieder</target>
+            </segment>
+        </unit>
+        <unit id="members.header.label">
+            <segment state="final">
+                <source>Name</source>
+                <target>Name</target>
+            </segment>
+        </unit>
+        <unit id="members.subheader.label">
+            <segment state="final">
+                <source>Position (CEO,CTO etc.)</source>
+                <target>Position (CEO, CTO usw.)</target>
+            </segment>
+        </unit>
+        <unit id="members.image.label">
+            <segment state="final">
+                <source>Image of team member</source>
+                <target>Bild des Teammitglieds</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.label">
+            <segment state="final">
+                <source>Contact and Social Media Icons</source>
+                <target>Kontakt- und Social-Media-Symbole</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.label">
+            <segment state="final">
+                <source>Icon</source>
+                <target>Symbol</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-facebook.label">
+            <segment state="final">
+                <source>Facebook</source>
+                <target>Facebook</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-twitter-x.label">
+            <segment state="final">
+                <source>Twitter/X</source>
+                <target>Twitter/X</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-linkedin.label">
+            <segment state="final">
+                <source>LinkedIn</source>
+                <target>LinkedIn</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-instagram.label">
+            <segment state="final">
+                <source>Instagram</source>
+                <target>Instagram</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-youtube.label">
+            <segment state="final">
+                <source>YouTube</source>
+                <target>YouTube</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-github.label">
+            <segment state="final">
+                <source>GitHub</source>
+                <target>GitHub</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-discord.label">
+            <segment state="final">
+                <source>Discord</source>
+                <target>Discord</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-whatsapp.label">
+            <segment state="final">
+                <source>WhatsApp</source>
+                <target>WhatsApp</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-telegram.label">
+            <segment state="final">
+                <source>Telegram</source>
+                <target>Telegram</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-globe.label">
+            <segment state="final">
+                <source>Website</source>
+                <target>Website</target>
+            </segment>
+        </unit>
+        <unit id="members.icons.icon.items.bi-envelope.label">
+            <segment state="final">
+                <source>E-Mail</source>
+                <target>E-Mail</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

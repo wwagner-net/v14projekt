@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<header id="header" class="header d-flex align-items-center sticky-top">
+		<div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+			<f:link.typolink parameter="{site.rootPageId}" class="logo d-flex align-items-center me-auto" title="{f:translate(domain: 'vt14sitepackage', key: 'vt14sitepackage.homelinktext')}">
+				<f:image src="EXT:vt14sitepackage/Resources/Public/Images/wowa-logo-black.svg" height="100" alt="Logo Wolfgang Wagner - wwagner.net"/>
+			</f:link.typolink>
+
+			<f:render partial="MainMenu" arguments="{_all}"/>
+
+			<f:render partial="HeaderButton" arguments="{_all}"/>
+
+			<f:variable name="searchTargetUri" value="{f:uri.page(pageUid: settings.indexedsearch.targetPid)}" />
+			<f:if condition="{searchTargetUri}">
+				<f:render partial="SearchLightbox" arguments="{_all}"/>
+			</f:if>
+
+			<f:render partial="LanguageMenu" arguments="{_all}"/>
+
+		</div>
+	</header>
+
+</f:spaceless>
+</html>

@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<footer id="footer" class="footer dark-background">
+
+		<div class="container">
+			<div class="row gy-3">
+				<div class="col-lg-3 col-md-6 d-flex">
+					<f:render.contentArea contentArea="{content.left}" />
+				</div>
+
+				<div class="col-lg-3 col-md-6 d-flex">
+					<f:render.contentArea contentArea="{content.center}" />
+				</div>
+
+				<div class="col-lg-3 col-md-6 d-flex">
+					<f:render.contentArea contentArea="{content.right}" />
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<h4>Follow Us</h4>
+					<div class="social-links d-flex">
+						<f:if condition="{settings.vt14sitepackage.socialicons}">
+							<f:for each="{settings.vt14sitepackage.socialicons}" as="item">
+								<f:variable name="icon"><f:split value="{item}" separator="," /></f:variable>
+								<a href="{icon.0}" target="_blank"><i class="bi bi-{icon.1}"></i></a>
+							</f:for>
+						</f:if>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container copyright text-center mt-4">
+			<f:render partial="MetaMenu" arguments="{_all}"/>
+			<p>&copy; <f:format.date date="now" format="Y"/> {settings.vt14sitepackage.copyrighttext}</p>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you've purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+			</div>
+		</div>
+
+	</footer>
+
+</f:spaceless>
+</html>
